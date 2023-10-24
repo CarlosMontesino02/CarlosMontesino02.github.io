@@ -3726,6 +3726,8 @@ textarea.form-control-lg {
 }
 
 .navbar {
+  font-size: 1.5rem;
+  font-weight: 600;
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
   --bs-navbar-color: rgba(0, 0, 0, 0.55);
@@ -3734,7 +3736,7 @@ textarea.form-control-lg {
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
-  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-font-size: 1.5rem;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-nav-link-padding-x: 0.5rem;
@@ -7782,8 +7784,8 @@ textarea.form-control-lg {
 }
 
 .py-5 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  padding-top: 2.1rem !important;
+  padding-bottom: 2.1rem !important;
 }
 
 .pt-0 {
@@ -8161,7 +8163,7 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #4f4f4f !important;
 }
 
 .bg-black {
@@ -8264,6 +8266,8 @@ textarea.form-control-lg {
 
 .rounded-circle {
   border-radius: 50% !important;
+  max-width: 190px;
+  box-shadow: 1px 1px 10px 1px white;
 }
 
 .rounded-pill {
@@ -10829,4 +10833,5 @@ textarea.form-control-lg {
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
+  background-color: #141619;
 }

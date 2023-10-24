@@ -1,0 +1,685 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Carlos Montesino Fernando</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	background-color: #272727;
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(223, 223, 223);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgb(26, 26, 26);
+	border-radius: 20px;
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="3d254cad-28dc-4b80-a866-56e709f7fdf5" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📋</span></div><h1 class="page-title">Carlos Montesino Fernando</h1><p class="page-description"></p></header><div class="page-body"><div id="99db7199-de30-4834-afdd-eab08f7a0df0" class="column-list"><div id="689691e2-ca31-444d-95cd-8ae71452b4de" style="width:50%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="9de085d9-3549-4b6e-ae20-1e841567970c"><div style="font-size:1.5em"><span class="icon">👨🏻‍💻</span></div><div style="width:100%">Soy Técnico Superior en Administración de Sistemas Informáticos en Red, con alojamiento en San Fernando, Cádiz.
+
+Tengo 20 años y durante mi formación he adquirido conocimientos de programación, basa de datos, desarrollo de aplicaciones web, administración de sistemas y he desarrollado un gran amor por la ciberseguridad.</div></figure><p id="46a0c433-e18a-4422-a283-f3882d6b1947" class=""><a href="mailto:carlos.montesino.fernando.02@gmail.com">carlos.montesino.fernando.02@gmail.com</a></p></div><div id="b7eef69e-11d5-4be9-9aa0-fd274e0e1e3d" style="width:50.00000000000002%" class="column"><h3 id="7da96026-50f8-496e-87fb-12ef6124ac15" class=""><strong>Contacto</strong></h3><p id="5767175b-7ec8-40d7-bbce-65003d5f5da7" class=""><a href="mailto:adalovelace@mail.com">📧 </a><a href="mailto:carlos.montesino.fernando.02@gmail.com">carlos.montesino.fernando.02@gmail.com</a></p><p id="dbf16d93-1a1c-445b-a908-9422a704b6da" class=""><a href="https://twitter.com/Carlos_MonFer">🐦 twitter.com/Carlos_MonFer</a></p><p id="284a6d74-7d47-4fcd-bb15-94a81aa3b3db" class=""><a href="https://github.com/CarlosMontesino02">👾 github.com/CarlosMontesino02</a></p><p id="46eae3a5-bf5f-4019-b70f-bfb535b4936b" class="">
+</p></div></div><h1 id="26f56e0c-3289-42f7-94b6-2fe7594914d8" class="">Experiencia laboral</h1><h3 id="f791f9f6-bb07-41d7-8d05-045a1fea92b8" class="">Nebenet</h3><p id="3c6d1d16-5d50-4aba-bbeb-1f9677e7dd60" class="block-color-gray">21 Marzo 2023 - 12 Junio 2023</p><p id="c26093e0-c6b2-4655-ac94-582f547f7279" class="">He realizado mis prácticas de Erasmus+ en Nebenet, una empresa Italiana ubicada en Potenza, cumpliendo funciones de soporte IT, cambios de hardware, mantenimiento de equipos, reparación de dispositivos, instalación de red y el desarrollo de una aplicación web con fines de e-comerce. Además conseguí aplicar mis conocimientos de ciberseguridad para identificar dos vulnerabilidades en la página web de mi empresa.</p><p id="cc9d747b-cd6b-4f5e-869c-a0ef9b61c1ea" class="">
+</p><hr id="7c76558d-3495-4736-816e-3cfe301634ae"/><h1 id="6aeaa726-907b-4124-b196-8fc1ac7cc8d0" class="">Habilidades</h1><h3 id="0cb4ea98-0081-491c-a8fd-9332908bac95" class="">Python</h3><p id="2da6d45e-bc87-4e0e-bbc2-e03cc5c0964b" class="">Tengo una sólida habilidad en programación en Python, con experiencia en el desarrollo de aplicaciones y scripts. He trabajado en proyectos que involucran análisis de datos, automatización de tareas y desarrollo de aplicaciones web utilizando el framework Django. </p><h3 id="690875e5-2199-4d66-ac36-b7f9d2eafb64" class="">Django</h3><p id="27a5ec45-46d6-40f6-bdf1-aa3fd47cd555" class="">Poseo experiencia en el desarrollo de aplicaciones web utilizando el framework Django. He trabajado en la creación de sistemas robustos y escalables, desde la configuración inicial del proyecto hasta la implementación de funcionalidades complejas. Y la puesta en producción de la aplicación.</p><h3 id="f8f21c7e-8e62-4dd1-b541-ece2f89815c6" class="">Ciberseguridad</h3><p id="c885a9de-1678-4ecb-ae71-34847140049b" class="">Mi interés por la ciberseguridad me ha llevado a adquirir conocimientos sólidos en esta área. Tengo experiencia en la identificación y mitigación de vulnerabilidades en aplicaciones web y en la implementación de medidas de seguridad robustas, análisis de riesgos, criptografía, informática forense, y legislación.</p><h3 id="8c3da3ba-4636-4250-8d86-0d03ea71289e" class="">Sistemas Linux y Windows</h3><p id="4cc9bd6a-e907-4ab6-b72c-6693aedf5ec6" class="">Tanto académicamente y7 personalmente he adquirido conocimientos sobre la administración de sistemas Windows y basados en UNIX. Sobre todo a nivel administrativo y de programación de scripts como pueden ser bash y batch. Además he usado estos sistemas para alojar diferentes softwares como kubernetes, aplicaciones web, contenedores con Docker, DevStack, proxmox etc.</p><p id="3f012fe2-2622-408c-abb0-396c2d02fc74" class="">
+</p><h1 id="3e3e6e6b-03cd-49e1-8ae3-5575394946af" class="">Soft skills</h1><ul id="8ed32d6f-d902-4b02-9641-45f32a1d0cea" class="bulleted-list"><li style="list-style-type:disc">Comunicación efectiva</li></ul><ul id="5d53545c-4c92-4443-bf6e-efc183e4b6a4" class="bulleted-list"><li style="list-style-type:disc">Trabajo en equipo</li></ul><ul id="f03c5e56-2406-4744-9340-9451dff14ca0" class="bulleted-list"><li style="list-style-type:disc"> Resolución de problemas</li></ul><ul id="1fdfda76-f0a2-4ea8-937d-ffc174b24aaf" class="bulleted-list"><li style="list-style-type:disc">Resiliencia</li></ul><ul id="311182e4-bcbf-4788-8a85-fa0da0c5fd46" class="bulleted-list"><li style="list-style-type:disc">Pensamiento creativo</li></ul><ul id="8822c8f2-557e-40e6-b12f-73231db81b3e" class="bulleted-list"><li style="list-style-type:disc">Curiosidad</li></ul><ul id="98fff581-35a9-49a2-9b2e-d63165700747" class="bulleted-list"><li style="list-style-type:disc">Trabajo bajo presión</li></ul><hr id="d92978f7-6a2a-4c02-b952-f72cf2852e2c"/><h1 id="26250de7-44d9-40c1-a937-0add6038ecd0" class="">🗣 Idiomas</h1><h3 id="b71ca56d-d325-4df0-abe5-b6d5ff1689b0" class="">Español 🇪🇸</h3><p id="02d6935f-3654-428c-91e2-5e90c75a2f4a" class="">Hablante nativo</p><h3 id="8856774c-f38a-4234-8136-e41d312558ae" class="">Inglés 🇺🇸</h3><p id="62f146cc-23a0-4398-9cfa-af1e57f74a53" class="">Nivel alto, titulación B2 por Trinity y en las pruebas de Erasmus obtuve un C1.</p><h3 id="39f6932f-2498-4e9b-a29d-af28a9f16f1e" class="">Francés <strong>🇫🇷</strong></h3><p id="a5023d2b-4426-4252-b5b7-d3795a16a91c" class="">Nivel básico</p><h3 id="ea946fe0-37a5-4a53-ad52-4588f5c2bf66" class="">Italiano<strong>🇮🇹</strong></h3><p id="83a7c581-aa38-4928-b2dd-ded23344d286" class="">Nivel básico, aprendido durante el proyecto Erasmus+</p><p id="23f59c01-692e-4411-9791-bedba962a8fe" class="">
+</p><hr id="fb502816-04fb-46d5-a82c-7c8368652b49"/><h1 id="8f5d4796-d4ee-4938-909a-8a3068f199b2" class="">Proyectos</h1><ul id="2cabdb2d-2135-4f3e-ab48-2f11f30505ad" class="bulleted-list"><li style="list-style-type:disc"><a href="https://github.com/CarlosMontesino02/Infr_sim">Simulación de una red</a></li></ul><ul id="ce647e5c-ca5e-463a-b60f-102a8cb4022f" class="bulleted-list"><li style="list-style-type:disc"><a href="https://github.com/CarlosMontesino02/photanic">Prueba de aplicación web con Django</a></li></ul><ul id="0fc542b4-9b3c-4eb5-8643-ec7fe03aefc5" class="bulleted-list"><li style="list-style-type:disc"><a href="https://view.genial.ly/6491f4c759a8a20019dfb1ca/presentation-presentacion-minimal">Proyecto Erasmus+ (link a  una presentación)</a></li></ul><h1 id="f34e8df0-a3c0-4bd6-a54e-91cfffa9e4d8" class="">Eventos</h1><ul id="eebff2ae-1764-45c1-999b-2de1c752819b" class="bulleted-list"><li style="list-style-type:disc">Participación en la DES Málaga 2023</li></ul><ul id="6f1d4740-acf4-45a8-943e-0e6e742a505f" class="bulleted-list"><li style="list-style-type:disc">Participación en la fase provincial de las XXXII olimpiadas matemáticas THALES 2016</li></ul><hr id="2192b3c7-65c9-408e-bb91-b0f3dc9ffd6e"/><h1 id="def030b9-f5b7-4bc0-b7e2-2a0d7a40ce68" class="">Educación</h1><h3 id="a7397d61-3940-47e4-9bd5-e53837da76c6" class="">Curso de <strong>Especialista en Ciberseguridad de la Junta de Andalucía</strong></h3><p id="f99c5e93-3f2c-4c6a-9d5a-bb72b25bcf60" class=""><mark class="highlight-gray">20 Marzo 2023-19 de Junio 2023</mark></p><p id="7c196168-5a2a-430b-880f-ce5ff16fb745" class="">125 horas</p><p id="9ccf3207-dd1e-4815-8860-3b756d12d005" class="">Tutora: <strong>Dª. Izary Rondón</strong></p><h3 id="7bc7059a-ac1f-40aa-a783-1a2b234df4d9" class="">Participación en actividades presenciales del curso <strong><strong>BusinessADN</strong></strong></h3><p id="50cc062c-8d77-4ef9-a7e3-29859c54a1c2" class=""><mark class="highlight-gray">14 dic 2022-31 Enero 2023</mark></p><h3 id="30142380-8413-47f2-ba8c-0338f43c902d" class="">Ciclo Formativo de Grado Superior en Administración de Sistemas Informáticos en Red</h3><p id="1c08df4d-013d-4c26-bbba-ae3b3934d9e6" class="block-color-gray">2020-2023</p><p id="04063faf-3bb4-47ec-8ddb-8b9af3da1279" class="">I.E.S Fernando Aguilar Quignon, Cádiz</p><p id="062fe666-c41c-4785-b85c-15e36927179f" class="">
+</p></body></html>
